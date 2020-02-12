@@ -1,22 +1,20 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+  import Nav from "../components/Nav.svelte";
+  import Sidebar from "../components/Sidebar.svelte";
+  import Footer from "../components/Footer.svelte";
 
-	export let segment;
+  let isSidebarOpen = true;
+  export let segment;
+  let theme = "dark";
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
-
-<Nav {segment}/>
-
-<main>
-	<slot></slot>
-</main>
+<Nav {segment} />
+<div id="layoutSidenav">
+  <Sidebar {segment} {theme} />
+  <div id="layoutSidenav_content">
+    <main class="container-fluid">
+      <slot />
+    </main>
+    <Footer />
+  </div>
+</div>

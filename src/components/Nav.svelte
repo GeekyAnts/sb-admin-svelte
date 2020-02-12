@@ -1,60 +1,56 @@
 <script>
-	export let segment;
+  export let segment;
+  let isSidebar = true;
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
-</style>
-
-<nav>
-	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'>home</a></li>
-		<li><a class:selected='{segment === "about"}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li>
-	</ul>
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+  <button
+    on:click={() => (isSidebar = !isSidebar)}
+    class="btn btn-link btn-sm order-1 order-lg-0"
+    id="sidebarToggle"
+    href="#">
+    <i class="fas fa-bars" />
+  </button>
+  <!-- Navbar Search-->
+  <form
+    class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2
+    my-md-0">
+    <div class="input-group">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search for..."
+        aria-label="Search"
+        aria-describedby="basic-addon2" />
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button">
+          <i class="fas fa-search" />
+        </button>
+      </div>
+    </div>
+  </form>
+  <!-- Navbar-->
+  <ul class="navbar-nav ml-auto ml-md-0">
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        id="userDropdown"
+        href="#"
+        role="button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false">
+        <i class="fas fa-user fa-fw" />
+      </a>
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        aria-labelledby="userDropdown">
+        <a class="dropdown-item" href="#">Settings</a>
+        <a class="dropdown-item" href="#">Activity Log</a>
+        <div class="dropdown-divider" />
+        <a class="dropdown-item" href="login.html">Logout</a>
+      </div>
+    </li>
+  </ul>
 </nav>
