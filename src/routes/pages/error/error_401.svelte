@@ -1,9 +1,9 @@
 <h1 class="display-1">401</h1>
 <p class="lead">Unauthorized</p>
 <p>Access to this resource is denied.</p>
-<a href="index.html">
+<a href=".">
   <svg
-    class="svg-inline--fa fa-arrow-left fa-w-14 mr-1"
+    class="svg-inline--fa fa-arrow-left fa-w-14"
     aria-hidden="true"
     focusable="false"
     data-prefix="fas"

@@ -2,7 +2,7 @@
 <p class="lead">Internal Server Error</p>
 <a href=".">
   <svg
-    class="svg-inline--fa fa-arrow-left fa-w-14 mr-1"
+    class="svg-inline--fa fa-arrow-left fa-w-14"
     aria-hidden="true"
     focusable="false"
     data-prefix="fas"

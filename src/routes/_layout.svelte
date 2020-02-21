@@ -1,20 +1,34 @@
 <script>
-  import Nav from "../components/Nav.svelte";
+  import Container from "sveltestrap/src/Container.svelte";
+
+  import Navbar from "../components/Navbar.svelte";
   import Sidebar from "../components/Sidebar.svelte";
   import Footer from "../components/Footer.svelte";
 
-  let isSidebarOpen = true;
   export let segment;
+
   let theme = "dark";
+  let color = "dark";
+  let title = "Start Bootstrap";
 </script>
 
-<Nav {segment} />
-<div id="layoutSidenav">
-  <Sidebar {segment} {theme} />
-  <div id="layoutSidenav_content">
-    <main class="container-fluid">
-      <slot />
-    </main>
-    <Footer />
+{#if segment !== 'pages'}
+  <div class="sb-nav-fixed">
+    <Navbar {segment} {color} {title} />
+    <div id="layoutSidenav">
+      <Sidebar {segment} {theme} />
+      <div id="layoutSidenav_content">
+        <main>
+          <Container fluid={true}>
+            <slot />
+          </Container>
+        </main>
+        <Footer />
+      </div>
+    </div>
   </div>
-</div>
+{:else}
+  <body>
+    <slot />
+  </body>
+{/if}
