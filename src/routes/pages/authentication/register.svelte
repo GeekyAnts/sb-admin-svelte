@@ -83,8 +83,8 @@
         </FormGroup>
       </Form>
     </CardBody>
-    <CardFooter class="text-center small">
+    <!-- <CardFooter class="text-center small">
       <a href=".">Have an account? Go to login</a>
-    </CardFooter>
+    </CardFooter> -->
   </Card>
 </Col>

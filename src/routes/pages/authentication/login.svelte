@@ -44,13 +44,15 @@
         </FormGroup>
         <FormGroup
           class="d-flex align-items-center justify-content-between mt-4 mb-0">
-          <a class="small" href=".">Forgot Password?</a>
-          <Button color="primary" href=".">Login</Button>
+          <!-- <a class="small" href=".">
+            Forgot Password?
+          </a> -->
+          <Button block color="primary" href=".">Login</Button>
         </FormGroup>
       </Form>
     </CardBody>
-    <CardFooter class="text-center small">
+    <!-- <CardFooter class="text-center small">
       <a href=".">Need an account? Sign up!</a>
-    </CardFooter>
+    </CardFooter> -->
   </Card>
 </div>

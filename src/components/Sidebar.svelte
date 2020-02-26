@@ -128,7 +128,6 @@
             <SidebarItem
               on:press={toggleAuthentication}
               class={!isAuthenticationOpen ? 'collapsed' : ''}
-              href="#"
               text="Authentication"
               rightIcon>
               <i class="fas fa-angle-down" slot="rightIcon" />
@@ -149,7 +148,6 @@
             <SidebarItem
               on:press={toggleError}
               class={!isErrorOpen ? 'collapsed' : ''}
-              href="#"
               text="Error"
               rightIcon>
               <i class="fas fa-angle-down" slot="rightIcon" />
