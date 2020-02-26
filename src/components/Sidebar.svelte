@@ -85,7 +85,6 @@
                 theme = 'light';
                 updateActiveLink('Light Sidenav');
               }}
-              on:press={toggleLayout}
               class={activeLink === 'Light Sidenav' ? 'active' : ''}
               href="layouts/light_sidenav"
               text="Light Sidenav" />
