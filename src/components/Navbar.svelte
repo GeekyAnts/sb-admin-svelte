@@ -29,11 +29,7 @@
   <Nav class="ml-auto" navbar>
     <Form inline>
       <InputGroup>
-        <Input
-          type="search"
-          name="search"
-          id="exampleSearch"
-          placeholder="Search for..." />
+        <Input type="search" name="search" placeholder="Search for..." />
         <InputGroupAddon addonType={'append'}>
           <Button color="primary">
             <i class="fas fa-search" />
