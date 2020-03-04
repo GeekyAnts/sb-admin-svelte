@@ -9,8 +9,12 @@
 
   let theme = "dark";
   let color = "dark";
-  let title = "Start Bootstrap";
+  let title = "SB Admin Svelte";
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
 
 {#if segment !== 'pages'}
   <div class="sb-nav-fixed">

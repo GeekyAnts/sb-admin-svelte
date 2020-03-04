@@ -3,22 +3,23 @@
   import BreadcrumbItem from "sveltestrap/src/BreadcrumbItem.svelte";
   import Card from "sveltestrap/src/Card.svelte";
   import CardBody from "sveltestrap/src/CardBody.svelte";
-  import CardFooter from "sveltestrap/src/CardFooter.svelte";
   import CardHeader from "sveltestrap/src/CardHeader.svelte";
   import CardText from "sveltestrap/src/CardText.svelte";
   import CardSubtitle from "sveltestrap/src/CardSubtitle.svelte";
   import Row from "sveltestrap/src/Row.svelte";
 
-  import Image from "../components/Image.svelte";
   import DashboardCard from "../components/DashboardCard.svelte";
   import CustomCard from "../components/CustomCard.svelte";
   import Table from "../components/Table.svelte";
+  import AreaChart from "../components/Charts/AreaChart.svelte";
+  import BarChart from "../components/Charts/BarChart.svelte";
+
+  let title = "SB Admin Svelte";
 </script>
 
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>{title}</title>
 </svelte:head>
-
 <h1 class="mt-4">Dashboard</h1>
 <Breadcrumb class="mb-4">
   <BreadcrumbItem active>Dashboard</BreadcrumbItem>
@@ -40,12 +41,12 @@
 <Row>
   <div class="col-xl-6">
     <CustomCard cardTitle="Area Chart Example" cardIcon="fas fa-chart-area">
-      <Image src="area_chart.png" alt="area_chart" />
+      <AreaChart />
     </CustomCard>
   </div>
   <div class="col-xl-6">
     <CustomCard cardTitle="Bar Chart Example" cardIcon="fas fa-chart-bar">
-      <Image src="bar_chart.png" alt="bar_chart" />
+      <BarChart />
     </CustomCard>
   </div>
 </Row>

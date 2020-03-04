@@ -14,6 +14,8 @@
   let isAuthenticationOpen = false;
   let isErrorOpen = false;
   let activeLink = "Dashboard";
+  let footerName = "SB Admin Svelte";
+  let footerText = "Logged in as:";
 
   const updateActiveLink = linkName => (activeLink = linkName);
 
@@ -186,8 +188,8 @@
       </Nav>
     </div>
     <div class="sb-sidenav-footer">
-      <div class="small">Logged in as:</div>
-      Start Bootstrap
+      <div class="small">{footerText}</div>
+      {footerName}
     </div>
   </Nav>
 </div>
