@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "SB_Admin_Svelte",
+  "description": "SB_Admin_Svelte",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -12,6 +12,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "chart.js": "^2.9.3",
     "compression": "^1.7.1",
     "polka": "next",
     "sirv": "^0.4.0",

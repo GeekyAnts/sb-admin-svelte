@@ -4,7 +4,6 @@
   import Card from "sveltestrap/src/Card.svelte";
   import CardBody from "sveltestrap/src/CardBody.svelte";
   import CardHeader from "sveltestrap/src/CardHeader.svelte";
-  import CardFooter from "sveltestrap/src/CardFooter.svelte";
 
   import Table from "../components/Table.svelte";
 </script>

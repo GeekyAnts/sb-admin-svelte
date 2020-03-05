@@ -7,7 +7,14 @@
   import CardFooter from "sveltestrap/src/CardFooter.svelte";
   import Row from "sveltestrap/src/Row.svelte";
 
-  import Image from "../components/Image.svelte";
+  import AreaChart from "../components/Charts/AreaChart.svelte";
+  import BarChart from "../components/Charts/BarChart.svelte";
+  import PieChart from "../components/Charts/PieChart.svelte";
+
+  let cardFooterText = "Updated yesterday at 11:59 PM";
+  let areaCardTitle = "Area Chart Example";
+  let barCardTitle = "Bar Chart Example";
+  let pieCardTitle = "Pie Chart Example";
 </script>
 
 <h1 class="mt-4">Charts</h1>
@@ -33,14 +40,12 @@
 <Card class="mb-4">
   <CardHeader>
     <i class="fas fa-chart-area" />
-    Area Chart Example
+    {areaCardTitle}
   </CardHeader>
   <CardBody>
-    <Image src="area_chart_big.png" alt="area_chart" />
+    <AreaChart />
   </CardBody>
-  <CardFooter class="small text-muted">
-    Updated yesterday at 11:59 PM
-  </CardFooter>
+  <CardFooter class="small text-muted">{cardFooterText}</CardFooter>
 </Card>
 
 <Row>
@@ -48,28 +53,24 @@
     <Card class="mb-4">
       <CardHeader>
         <i class="fas fa-chart-bar" />
-        Bar Chart Example
+        {barCardTitle}
       </CardHeader>
       <CardBody>
-        <Image src="bar_chart_big.png" alt="bar_chart" />
+        <BarChart />
       </CardBody>
-      <CardFooter class="small text-muted">
-        Updated yesterday at 11:59 PM
-      </CardFooter>
+      <CardFooter class="small text-muted">{cardFooterText}</CardFooter>
     </Card>
   </div>
   <div class="col-lg-6">
     <Card class="mb-4">
       <CardHeader>
         <i class="fas fa-chart-pie" />
-        Pie Chart Example
+        {pieCardTitle}
       </CardHeader>
       <CardBody>
-        <Image src="pie_chart.png" alt="bar_chart" />
+        <PieChart />
       </CardBody>
-      <CardFooter class="small text-muted">
-        Updated yesterday at 11:59 PM
-      </CardFooter>
+      <CardFooter class="small text-muted">{cardFooterText}</CardFooter>
     </Card>
   </div>
 </Row>
