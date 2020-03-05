@@ -1,6 +1,6 @@
 {
-  "name": "SB Admin Svelte",
-  "description": "SB Admin Svelte",
+  "name": "SB_Admin_Svelte",
+  "description": "SB_Admin_Svelte",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

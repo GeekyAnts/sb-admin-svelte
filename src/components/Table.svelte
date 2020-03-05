@@ -9,7 +9,7 @@
   ];
 </script>
 
-<Table bordered>
+<Table bordered responsive>
   <thead>
     <tr>
       {#each tableHeading as heading}
