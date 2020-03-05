@@ -1,6 +1,6 @@
-# sb-admin-svelte
+# SB-Admin-Svelte
 
-A dashboard made by using Svelte and Sapper, inspired from sb-admin-dashboard.
+A dashboard made by using Svelte and Sapper, inspired from SB-Admin Dashboard.
 
 ## Preview
 
