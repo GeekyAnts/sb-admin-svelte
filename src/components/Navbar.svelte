@@ -19,7 +19,6 @@
   import CustomInput from "sveltestrap/src/CustomInput.svelte";
   import Button from "sveltestrap/src/Button.svelte";
 
-  export let segment;
   export let color;
   export let title;
 
@@ -59,7 +58,7 @@
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
-            <a class="dropdown-item" href="pages/{'authentication_login'}">
+            <a class="dropdown-item" href="pages/authentication/login">
               Logout
             </a>
           </DropdownItem>

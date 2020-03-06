@@ -54,10 +54,9 @@
         <SidebarItem
           on:press={() => {
             theme = 'dark';
-            updateActiveLink('Dashboard');
           }}
           text="Dashboard"
-          class={activeLink === 'Dashboard' ? 'active' : ''}
+          class={segment === '.' || segment === undefined ? 'active' : ''}
           leftIcon
           href=".">
           <i class="fas fa-tachometer-alt" slot="leftIcon" />
@@ -79,7 +78,7 @@
                 theme = 'dark';
                 updateActiveLink('Static Navigation');
               }}
-              class={activeLink === 'Static Navigation' ? 'active' : ''}
+              class={segment === 'layouts' && activeLink === 'Static Navigation' ? 'active' : ''}
               href="layouts/static_navigation"
               text="Static Navigation" />
             <SidebarItem
@@ -87,7 +86,7 @@
                 theme = 'light';
                 updateActiveLink('Light Sidenav');
               }}
-              class={activeLink === 'Light Sidenav' ? 'active' : ''}
+              class={segment === 'layouts' && activeLink === 'Light Sidenav' ? 'active' : ''}
               href="layouts/light_sidenav"
               text="Light Sidenav" />
           </Nav>
@@ -135,14 +134,12 @@
             </SidebarItem>
             <Collapse isOpen={isAuthenticationOpen}>
               <Nav class="sb-sidenav-menu-nested">
+                <SidebarItem href="pages/authentication/login" text="Login" />
                 <SidebarItem
-                  href="pages/{'authentication_login'}"
-                  text="Login" />
-                <SidebarItem
-                  href="pages/{'authentication_register'}"
+                  href="pages/authentication/register"
                   text="Register" />
                 <SidebarItem
-                  href="pages/{'authentication_forget-password'}"
+                  href="pages/authentication/forget_password"
                   text="Forgot Password" />
               </Nav>
             </Collapse>
@@ -155,19 +152,18 @@
             </SidebarItem>
             <Collapse isOpen={isErrorOpen}>
               <Nav class="sb-sidenav-menu-nested">
-                <SidebarItem href="pages/{'error_401'}" text="401 Page" />
-                <SidebarItem href="pages/{'error_404'}" text="404 Page" />
-                <SidebarItem href="pages/{'error_500'}" text="500 Page" />
+                <SidebarItem href="pages/error/error_401" text="401 Page" />
+                <SidebarItem href="pages/error/error_404" text="404 Page" />
+                <SidebarItem href="pages/error/error_500" text="500 Page" />
               </Nav>
             </Collapse>
           </Nav>
         </Collapse>
         <div class="sb-sidenav-menu-heading">Addons</div>
         <SidebarItem
-          class={activeLink === 'Charts' ? 'active' : ''}
+          class={segment === 'charts' ? 'active' : ''}
           on:press={() => {
             theme = 'dark';
-            updateActiveLink('Charts');
           }}
           href="charts"
           text="Charts"
@@ -175,10 +171,9 @@
           <i class="fas fa-chart-area" slot="leftIcon" />
         </SidebarItem>
         <SidebarItem
-          class={activeLink === 'Tables' ? 'active' : ''}
+          class={segment === 'tables' ? 'active' : ''}
           on:press={() => {
             theme = 'dark';
-            updateActiveLink('Tables');
           }}
           href="tables"
           text="Tables"

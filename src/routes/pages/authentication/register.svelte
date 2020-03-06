@@ -2,6 +2,7 @@
   import Card from "sveltestrap/src/Card.svelte";
   import CardBody from "sveltestrap/src/CardBody.svelte";
   import CardHeader from "sveltestrap/src/CardHeader.svelte";
+  import CardFooter from "sveltestrap/src/CardFooter.svelte";
   import Form from "sveltestrap/src/Form.svelte";
   import FormGroup from "sveltestrap/src/FormGroup.svelte";
   import Label from "sveltestrap/src/Label.svelte";
@@ -78,9 +79,14 @@
           </div>
         </Row>
         <FormGroup class="mt-4 mb-0">
-          <Button color="primary" block href=".">Create Account</Button>
+          <Button color="primary" block href="pages/authentication/login">
+            Create Account
+          </Button>
         </FormGroup>
       </Form>
     </CardBody>
+    <CardFooter class="text-center small">
+      <a href="pages/authentication/login">Have an account? Go to login</a>
+    </CardFooter>
   </Card>
 </Col>
