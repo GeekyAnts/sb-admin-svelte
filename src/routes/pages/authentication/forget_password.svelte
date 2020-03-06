@@ -6,7 +6,6 @@
   import FormGroup from "sveltestrap/src/FormGroup.svelte";
   import Label from "sveltestrap/src/Label.svelte";
   import Input from "sveltestrap/src/Input.svelte";
-  import CustomInput from "sveltestrap/src/CustomInput.svelte";
   import Col from "sveltestrap/src/Col.svelte";
   import Button from "sveltestrap/src/Button.svelte";
 </script>
