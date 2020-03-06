@@ -2,6 +2,7 @@
   import Card from "sveltestrap/src/Card.svelte";
   import CardBody from "sveltestrap/src/CardBody.svelte";
   import CardHeader from "sveltestrap/src/CardHeader.svelte";
+  import CardFooter from "sveltestrap/src/CardFooter.svelte";
   import Form from "sveltestrap/src/Form.svelte";
   import FormGroup from "sveltestrap/src/FormGroup.svelte";
   import Label from "sveltestrap/src/Label.svelte";
@@ -32,9 +33,15 @@
         </FormGroup>
         <FormGroup
           class="d-flex align-items-center justify-content-between mt-4 mb-0">
-          <Button block color="primary" href=".">Reset Password</Button>
+          <a class="small" href="pages/authentication/login">Return to login</a>
+          <Button color="primary" href="pages/authentication/login">
+            Reset Password
+          </Button>
         </FormGroup>
       </Form>
     </CardBody>
+    <CardFooter class="text-center small">
+      <a href="pages/authentication/register">Need an account? Sign up!</a>
+    </CardFooter>
   </Card>
 </div>

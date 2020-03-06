@@ -140,7 +140,7 @@
                   text="Register" />
                 <SidebarItem
                   href="pages/authentication/forget_password"
-                  text="Forget Password" />
+                  text="Forgot Password" />
               </Nav>
             </Collapse>
             <SidebarItem
