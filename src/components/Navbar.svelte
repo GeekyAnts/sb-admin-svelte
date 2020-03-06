@@ -52,14 +52,14 @@
         </DropdownToggle>
         <DropdownMenu right>
           <DropdownItem>
-            <a class="text-dark" href="settings">Settings</a>
+            <a class="dropdown-item" href="settings">Settings</a>
           </DropdownItem>
           <DropdownItem>
-            <a class="text-dark" href="activity_log">Activity Log</a>
+            <a class="dropdown-item" href="activity_log">Activity Log</a>
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
-            <a class="text-dark" href="pages/{'authentication_login'}">
+            <a class="dropdown-item" href="pages/{'authentication_login'}">
               Logout
             </a>
           </DropdownItem>
