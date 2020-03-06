@@ -2,7 +2,6 @@
   import Card from "sveltestrap/src/Card.svelte";
   import CardBody from "sveltestrap/src/CardBody.svelte";
   import CardHeader from "sveltestrap/src/CardHeader.svelte";
-  import CardFooter from "sveltestrap/src/CardFooter.svelte";
   import Form from "sveltestrap/src/Form.svelte";
   import FormGroup from "sveltestrap/src/FormGroup.svelte";
   import Label from "sveltestrap/src/Label.svelte";
@@ -83,8 +82,5 @@
         </FormGroup>
       </Form>
     </CardBody>
-    <!-- <CardFooter class="text-center small">
-      <a href=".">Have an account? Go to login</a>
-    </CardFooter> -->
   </Card>
 </Col>

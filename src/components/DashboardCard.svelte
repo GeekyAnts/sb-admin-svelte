@@ -20,7 +20,9 @@
     <CardText>{cardTitle}</CardText>
   </CardBody>
   <CardFooter class="d-flex align-items-center justify-content-between">
-    <a class="small text-white stretched-link" href="#">{cardFooterText}</a>
+    <a class="small text-white stretched-link" href="charts">
+      {cardFooterText}
+    </a>
     <div class="small text-white">
       <i class="fas fa-angle-right" />
     </div>

@@ -51,8 +51,12 @@
           <i class="fas fa-user fa-fw ml-3" />
         </DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem>Settings</DropdownItem>
-          <DropdownItem>Activity Log</DropdownItem>
+          <DropdownItem>
+            <a class="text-dark" href="settings">Settings</a>
+          </DropdownItem>
+          <DropdownItem>
+            <a class="text-dark" href="activity_log">Activity Log</a>
+          </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
             <a class="text-dark" href="pages/{'authentication_login'}">
