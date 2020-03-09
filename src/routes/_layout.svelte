@@ -10,6 +10,7 @@
   let theme = "dark";
   let color = "dark";
   let title = "SB Admin Svelte";
+  let toggle = false;
 </script>
 
 <svelte:head>
@@ -17,8 +18,8 @@
 </svelte:head>
 
 {#if segment !== 'pages'}
-  <div class="sb-nav-fixed">
-    <Navbar {segment} {color} {title} />
+  <div class="sb-nav-fixed" class:sb-sidenav-toggled={toggle}>
+    <Navbar {segment} {color} {title} on:press={() => (toggle = !toggle)} />
     <div id="layoutSidenav">
       <Sidebar {segment} {theme} />
       <div id="layoutSidenav_content">

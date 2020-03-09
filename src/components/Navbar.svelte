@@ -1,4 +1,6 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
   import Navbar from "sveltestrap/src/Navbar.svelte";
   import NavbarBrand from "sveltestrap/src/NavbarBrand.svelte";
   import NavbarToggler from "sveltestrap/src/NavbarToggler.svelte";
@@ -19,18 +21,34 @@
   import CustomInput from "sveltestrap/src/CustomInput.svelte";
   import Button from "sveltestrap/src/Button.svelte";
 
+  const dispatch = createEventDispatcher();
+
   export let color;
   export let title;
 
   function searchHandle() {
     event.preventDefault();
   }
+
+  function toggle() {
+    dispatch("press");
+  }
 </script>
 
 <Navbar class="sb-topnav navbar-expand" {color} dark expand="md">
   <NavbarBrand href=".">{title}</NavbarBrand>
+  <Button
+    size="sm"
+    class="btn-link order-1 order-lg-0"
+    color="none"
+    id="sidebarToggle"
+    on:click={toggle}>
+    <i class="fas fa-bars" />
+  </Button>
   <Nav class="ml-auto" navbar>
-    <Form inline>
+    <Form
+      inline
+      class="d-none d-md-inline-block ml-auto mr-0 mr-md-3 my-2 my-md-0">
       <InputGroup>
         <Input
           type="search"
@@ -44,7 +62,7 @@
         </InputGroupAddon>
       </InputGroup>
     </Form>
-    <ListGroup class="ml-auto ml-md-0">
+    <ListGroup class="nav ml-auto ml-md-0">
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>
           <i class="fas fa-user fa-fw ml-3" />

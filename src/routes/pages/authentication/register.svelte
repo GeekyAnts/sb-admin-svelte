@@ -13,7 +13,7 @@
 </script>
 
 <Col class="col-lg-7">
-  <Card class="shadow-lg border-0 rounded-lg mt-5">
+  <Card class="shadow-lg border-0 rounded-lg mt-5 mb-5">
     <CardHeader>
       <h3 class="text-center font-weight-light my-4">Create Account</h3>
     </CardHeader>
