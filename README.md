@@ -4,7 +4,7 @@ A dashboard made by using Svelte and Sapper, inspired from SB-Admin Dashboard.
 
 ## Preview
 
-![Dashboard](static/dashboard-demo.gif)
+![Dashboard](static/dashboard.gif)
 
 Check the live demo **[here](https://objective-benz-e53b25.netlify.com/)**
 
