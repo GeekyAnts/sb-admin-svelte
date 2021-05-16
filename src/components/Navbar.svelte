@@ -6,17 +6,15 @@
   import NavItem from "sveltestrap/src/NavItem.svelte";
   import NavLink from "sveltestrap/src/NavLink.svelte";
   import Collapse from "sveltestrap/src/Collapse.svelte";
-  import UncontrolledDropdown from "sveltestrap/src/UncontrolledDropdown.svelte";
+  import Dropdown from "sveltestrap/src/Dropdown.svelte";
   import DropdownToggle from "sveltestrap/src/DropdownToggle.svelte";
   import DropdownMenu from "sveltestrap/src/DropdownMenu.svelte";
   import DropdownItem from "sveltestrap/src/DropdownItem.svelte";
   import ListGroup from "sveltestrap/src/ListGroup.svelte";
   import Form from "sveltestrap/src/Form.svelte";
   import InputGroup from "sveltestrap/src/InputGroup.svelte";
-  import InputGroupAddon from "sveltestrap/src/InputGroupAddon.svelte";
   import Label from "sveltestrap/src/Label.svelte";
   import Input from "sveltestrap/src/Input.svelte";
-  import CustomInput from "sveltestrap/src/CustomInput.svelte";
   import Button from "sveltestrap/src/Button.svelte";
 
   export let color;
@@ -37,15 +35,15 @@
           name="search"
           id="exampleSearch"
           placeholder="Search for..." />
-        <InputGroupAddon addonType={'append'}>
+        <InputGroup addonType={'append'}>
           <Button color="primary" on:click={searchHandle}>
             <i class="fas fa-search" />
           </Button>
-        </InputGroupAddon>
+        </InputGroup>
       </InputGroup>
     </Form>
     <ListGroup class="ml-auto ml-md-0">
-      <UncontrolledDropdown nav inNavbar>
+      <Dropdown nav inNavbar>
         <DropdownToggle nav caret>
           <i class="fas fa-user fa-fw ml-3" />
         </DropdownToggle>
@@ -63,7 +61,7 @@
             </a>
           </DropdownItem>
         </DropdownMenu>
-      </UncontrolledDropdown>
+      </Dropdown>
     </ListGroup>
   </Nav>
 </Navbar>
