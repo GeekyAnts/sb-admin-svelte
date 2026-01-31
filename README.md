@@ -8,6 +8,15 @@ A dashboard made by using Svelte and Sapper, inspired from SB-Admin Dashboard.
 
 Check the live demo **[here](https://objective-benz-e53b25.netlify.com/)**
 
+
+## About
+
+   SB Admin rebuilt with Svelte by [GeekyAnts](https://geekyants.com?utm_source=github&utm_medium=opensource&utm_campaign=sb-admin-svelte).
+
+   Looking for [web engineering](https://geekyants.com/service/hire-web-app-development-services?utm_source=github&utm_medium=opensource&utm_campaign=sb-admin-svelte)
+   or [full stack development](https://geekyants.com/service/full-stack-app-development-services?utm_source=github&utm_medium=opensource&utm_campaign=sb-admin-svelte)?
+   [Let's talk](https://geekyants.com/hire?utm_source=github&utm_medium=opensource&utm_campaign=sb-admin-svelte).
+
 ## Getting started
 
 ### Clone
